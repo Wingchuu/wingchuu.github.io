@@ -20,7 +20,7 @@ h3,
 h4,
 h5,
 h6 {
-	color: #2e7d32; /* 深綠取代 #40424a */
+	color: #2e7d32; /* 深綠 */
 	margin: 0;
 	font-weight: 600;
 	font-family: 'Josefin Sans', sans-serif;
@@ -86,7 +86,7 @@ ol {
 	height: 2px;
 	left: 0;
 	bottom: 0;
-	background: #2e7d32; /* 深綠取代 #40424a */
+	background: #2e7d32; /* 深綠 */
 }
 
 .set-bg {
@@ -172,7 +172,7 @@ ol {
 }
 
 .circle-progress .progress-info {
-	background: #c8e6c9; /* 淺綠取代 #f2f7f8 */
+	background: #c8e6c9; /* 淺綠 */
 	width: 127px;
 	height: 127px;
 	border-radius: 150px;
@@ -182,7 +182,7 @@ ol {
 
 .circle-progress .progress-info h2 {
 	font-size: 36px;
-	color: #2e7d32 !important; /* 深綠 */
+	color: #2e7d32 !important;
 }
 
 .circle-progress .prog-title {
@@ -218,7 +218,7 @@ ol {
 	height: 375px;
 	display: table;
 	width: 100%;
-	background: #2e7d32; /* 深綠取代 #40424a */
+	background: #2e7d32; /* 深綠 */
 }
 
 .fact-box.trans {
@@ -253,7 +253,7 @@ ol {
 }
 
 .single-progress-item p {
-	color: #2e7d32; /* 深綠取代 #40424a */
+	color: #2e7d32;
 	margin-bottom: 0;
 	font-weight: 600;
 }
@@ -271,14 +271,14 @@ ol {
 	height: 100%;
 	left: 0;
 	top: 0;
-	background: #2e7d32; /* 深綠取代 #40424a */
+	background: #2e7d32;
 }
 
 .bar-inner span {
 	position: absolute;
 	right: 0;
 	bottom: -30px;
-	color: #2e7d32; /* 深綠 */
+	color: #2e7d32;
 	font-weight: 600;
 }
 
@@ -307,7 +307,7 @@ ol {
 	display: inline-block;
 	margin-right: 18px;
 	border-radius: 12px;
-	background: #2e7d32; /* 深綠取代 #40424a */
+	background: #2e7d32;
 }
 
 .language-progress .lan-prog span.fade-ele {
@@ -330,7 +330,7 @@ ol {
 }
 
 .icon-box p {
-	color: #2e7d32; /* 深綠取代 #40424a */
+	color: #2e7d32;
 }
 
 .social-links a {
@@ -342,7 +342,20 @@ ol {
 -----------------------*/
 .header-section {
 	padding: 50px 40px;
-	background: linear-gradient(to bottom, #e6f4e6 0%, #c8e6c9 100%); /* 淺綠漸層 */
+	position: relative;
+	background: #2e7d32; /* 深綠作為基礎 */
+}
+
+.header-section::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to right, #2e7d32 50%, #e6f4e6 100%); /* 深綠到淺綠漸層 */
+	clip-path: ellipse(80% 100% at 30% 50%); /* 曲線分隔效果 */
+	z-index: -1;
 }
 
 .site-logo h2 {
@@ -350,7 +363,7 @@ ol {
 }
 
 .site-logo h2 a {
-	color: #2e7d32; /* 深綠 */
+	color: #2e7d32;
 }
 
 .site-logo p {
@@ -366,7 +379,20 @@ ol {
 	Hero section
 -----------------------*/
 .hero-section {
-	background: linear-gradient(to bottom, #e6f4e6 0%, #66bb6a 100%); /* 淺綠到中間綠漸層 */
+	position: relative;
+	background: #2e7d32; /* 深綠作為基礎 */
+}
+
+.hero-section::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to right, #2e7d32 50%, #e6f4e6 100%); /* 深綠到淺綠漸層 */
+	clip-path: ellipse(80% 100% at 30% 50%); /* 曲線分隔效果 */
+	z-index: -1;
 }
 
 .hero-text {
@@ -389,7 +415,7 @@ ol {
 }
 
 .hero-image img {
-	width: 250px; /* 放大圖片 */
+	width: 250px;
 	height: auto;
 	border-radius: 15px;
 	display: block;
@@ -406,13 +432,13 @@ ol {
 /* 響應式圖片尺寸 */
 @media only screen and (max-width: 767px) {
 	.hero-image img {
-		width: 180px; /* 手機上縮小 */
+		width: 180px;
 	}
 }
 
 @media only screen and (min-width: 1200px) {
 	.hero-image img {
-		width: 300px; /* 大螢幕放大 */
+		width: 300px;
 	}
 }
 
@@ -431,7 +457,7 @@ ol {
 }
 
 .hero-info ul li span {
-	color: #2e7d32; /* 深綠 */
+	color: #2e7d32;
 	display: inline-block;
 	min-width: 220px;
 }
@@ -444,8 +470,21 @@ ol {
 	Social section
 -----------------------*/
 .social-section {
-	background: linear-gradient(to bottom, #e6f4e6 0%, #a5d6a7 100%); /* 淺綠漸層 */
+	position: relative;
+	background: #2e7d32;
 	padding: 80px 0;
+}
+
+.social-section::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to right, #2e7d32 50%, #e6f4e6 100%);
+	clip-path: ellipse(80% 100% at 30% 50%);
+	z-index: -1;
 }
 
 .social-section .social-links {
@@ -499,7 +538,7 @@ ol {
 	list-style: none;
 	margin-left: 60px;
 	padding-left: 110px;
-	border-left: 2px solid #2e7d32; /* 深綠邊框 */
+	border-left: 2px solid #2e7d32;
 }
 
 .resume-list li {
@@ -516,9 +555,9 @@ ol {
 	content: '';
 	width: 15px;
 	height: 15px;
-	border: 2px solid #2e7d32; /* 深綠邊框 */
+	border: 2px solid #2e7d32;
 	border-radius: 50px;
-	background: #e6f4e6; /* 淺綠背景 */
+	background: #e6f4e6;
 	top: 30px;
 	left: -118px;
 }
@@ -556,14 +595,14 @@ ol {
 .review-slider .owl-dots .owl-dot {
 	width: 12px;
 	height: 12px;
-	border: 2px solid #2e7d32; /* 深綠邊框 */
+	border: 2px solid #2e7d32;
 	border-radius: 50px;
 	background: #cacaca;
 	margin-bottom: 15px;
 }
 
 .review-slider .owl-dots .owl-dot.active {
-	background: #2e7d32; /* 深綠 */
+	background: #2e7d32;
 }
 
 .single-review .qut {
@@ -683,7 +722,7 @@ ol {
 	Footer section
 -----------------------*/
 .footer-section {
-	background: #2e7d32; /* 深綠取代 #40424a */
+	background: #2e7d32;
 	padding: 20px 0;
 }
 
@@ -698,7 +737,20 @@ ol {
 	Home 2 Style
 -----------------------*/
 .home-two-style {
-	background: linear-gradient(to bottom, #e6f4e6 0%, #2e7d32 100%); /* 淺綠到深綠漸層 */
+	position: relative;
+	background: #2e7d32;
+}
+
+.home-two-style::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to right, #2e7d32 50%, #e6f4e6 100%);
+	clip-path: ellipse(80% 100% at 30% 50%);
+	z-index: -1;
 }
 
 .home-two-style .header-section,
@@ -736,7 +788,7 @@ ol {
 
 .home-two-style .section-title h2:after,
 .home-two-style .review-slider .owl-dots .owl-dot.active {
-	background: #2e7d32; /* 深綠 */
+	background: #2e7d32;
 }
 
 .home-two-style .resume-list,
@@ -745,7 +797,7 @@ ol {
 .home-two-style .site-btn,
 .home-two-style .contact-form input,
 .home-two-style .contact-form textarea {
-	border-color: #2e7d32; /* 深綠邊框 */
+	border-color: #2e7d32;
 }
 
 .home-two-style .hero-image {
@@ -758,15 +810,15 @@ ol {
 }
 
 .home-two-style .resume-list li:after {
-	background: #66bb6a; /* 中間綠 */
+	background: #66bb6a;
 }
 
 .home-two-style .circle-progress .progress-info {
-	background: rgba(46, 125, 50, 0.2); /* 深綠透明 */
+	background: rgba(46, 125, 50, 0.2);
 }
 
 .home-two-style .fact-box {
-	border: 2px solid #2e7d32; /* 深綠邊框 */
+	border: 2px solid #2e7d32;
 }
 
 .home-two-style .fact-box.trans {
@@ -774,7 +826,7 @@ ol {
 }
 
 .home-two-style .footer-section {
-	background: #2e7d32; /* 深綠 */
+	background: #2e7d32;
 }
 
 .home-two-style .contact-form ::-webkit-input-placeholder {
@@ -798,10 +850,24 @@ ol {
 -----------------------*/
 .home-three-style .main-left-area,
 .home-four-style .main-left-area {
-	background: linear-gradient(to bottom, #e6f4e6 0%, #c8e6c9 100%); /* 淺綠漸層 */
+	position: relative;
+	background: #2e7d32;
 	padding-top: 200px;
 	padding-right: 80px;
 	padding-left: 80px;
+}
+
+.home-three-style .main-left-area::after,
+.home-four-style .main-left-area::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to right, #2e7d32 50%, #e6f4e6 100%);
+	clip-path: ellipse(80% 100% at 30% 50%);
+	z-index: -1;
 }
 
 .home-three-style .main-left-area .section-title h2,
@@ -875,7 +941,7 @@ ol {
 
 .home-three-style .review-slider .owl-dots .owl-dot.active,
 .home-four-style .review-slider .owl-dots .owl-dot.active {
-	background: #2e7d32; /* 深綠 */
+	background: #2e7d32;
 }
 
 .home-three-style .skills,
@@ -917,16 +983,19 @@ ol {
 
 .home-four-style .main-left-area {
 	position: relative;
-	background: linear-gradient(to bottom, #e6f4e6 0%, #2e7d32 100%); /* 淺綠到深綠漸層 */
+	background: #2e7d32;
 }
 
-.home-four-style .main-left-area:after {
-	content: "";
-	width: 100%;
-	height: 800px;
+.home-four-style .main-left-area::after {
+	content: '';
+	position: absolute;
 	top: 0;
 	left: 0;
-	background-image: none; /* 移除原背景圖片 */
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to right, #2e7d32 50%, #e6f4e6 100%);
+	clip-path: ellipse(80% 100% at 30% 50%);
+	z-index: -1;
 }
 
 .home-four-style .main-left-area h1,
@@ -951,12 +1020,12 @@ ol {
 }
 
 .home-four-style .main-left-area .circle-progress .progress-info {
-	background: rgba(46, 125, 50, 0.2); /* 深綠透明 */
+	background: rgba(46, 125, 50, 0.2);
 }
 
 .home-four-style .main-left-area .section-title h2:after,
 .home-four-style .main-left-area .language-progress .lan-prog span {
-	background: #2e7d32; /* 深綠 */
+	background: #2e7d32;
 }
 
 .home-four-style .main-left-area .language-progress .lan-prog span.fade-ele {
@@ -979,12 +1048,12 @@ ol {
 
 .home-four-style .main-right-area .section-title h2:after,
 .home-four-style .main-right-area .review-slider .owl-dots .owl-dot.active {
-	background: #2e7d32; /* 深綠 */
+	background: #2e7d32;
 }
 
 .home-four-style .main-right-area .resume-list h2,
 .home-four-style .main-right-area .single-review .qut {
-	color: #2e7d32; /* 深綠 */
+	color: #2e7d32;
 }
 
 /*---------------------
@@ -1000,7 +1069,20 @@ ol {
 
 .home-five-style .hero-section {
 	padding-top: 70px;
-	background: linear-gradient(to bottom, #e6f4e6 0%, #66bb6a 100%); /* 淺綠漸層 */
+	position: relative;
+	background: #2e7d32;
+}
+
+.home-five-style .hero-section::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to right, #2e7d32 50%, #e6f4e6 100%);
+	clip-path: ellipse(80% 100% at 30% 50%);
+	z-index: -1;
 }
 
 .home-five-style .hero-section img {
@@ -1061,7 +1143,7 @@ ol {
 }
 
 .home-five-style .review-slider .owl-dots .owl-dot.active {
-	background: #2e7d32; /* 深綠 */
+	background: #2e7d32;
 }
 
 .home-five-style .circle-progress {
@@ -1082,14 +1164,14 @@ ol {
 .home-six-style .resume-list h2,
 .home-six-style .icon-box i,
 .home-six-style .single-review .qut {
-	color: #2e7d32; /* 深綠 */
+	color: #2e7d32;
 }
 
 .home-six-style .section-title h2:after,
 .home-six-style .fact-box,
 .home-six-style .review-slider .owl-dots .owl-dot.active,
 .home-six-style .language-progress .lan-prog span {
-	background: #2e7d32; /* 深綠 */
+	background: #2e7d32;
 }
 
 .home-six-style .language-progress .lan-prog span.fade-ele {
@@ -1105,8 +1187,21 @@ ol {
 }
 
 .home-six-style .hero-section {
-	background: linear-gradient(to bottom, #e6f4e6 0%, #2e7d32 100%); /* 淺綠到深綠漸層 */
+	position: relative;
+	background: #2e7d32;
 	padding-top: 70px;
+}
+
+.home-six-style .hero-section::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to right, #2e7d32 50%, #e6f4e6 100%);
+	clip-path: ellipse(80% 100% at 30% 50%);
+	z-index: -1;
 }
 
 .home-six-style .hero-section img {
@@ -1171,7 +1266,7 @@ ol {
 }
 
 .info-section {
-	background: #2e7d32; /* 深綠 */
+	background: #2e7d32;
 	padding: 60px 0;
 }
 
@@ -1201,18 +1296,51 @@ ol {
 @media only screen and (max-width: 1450px) {
 	.home-five-style .header-section {
 		position: relative;
-		background: linear-gradient(to bottom, #e6f4e6 0%, #c8e6c9 100%);
+		background: #2e7d32;
+	}
+	.home-five-style .header-section::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(to right, #2e7d32 50%, #e6f4e6 100%);
+		clip-path: ellipse(80% 100% at 30% 50%);
+		z-index: -1;
 	}
 	.home-six-style .header-section {
 		position: relative;
-		background: linear-gradient(to bottom, #e6f4e6 0%, #2e7d32 100%);
+		background: #2e7d32;
+	}
+	.home-six-style .header-section::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(to right, #2e7d32 50%, #e6f4e6 100%);
+		clip-path: ellipse(80% 100% at 30% 50%);
+		z-index: -1;
 	}
 }
 
 @media only screen and (max-width: 1366px) and (min-width: 1200px) {
 	.home-five-style .header-section {
 		position: relative;
-		background: linear-gradient(to bottom, #e6f4e6 0%, #c8e6c9 100%);
+		background: #2e7d32;
+	}
+	.home-five-style .header-section::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(to right, #2e7d32 50%, #e6f4e6 100%);
+		clip-path: ellipse(80% 100% at 30% 50%);
+		z-index: -1;
 	}
 	.container-warp {
 		min-width: 80%;
@@ -1285,7 +1413,18 @@ ol {
 	}
 	.home-three-style .header-section {
 		position: relative;
-		background: linear-gradient(to bottom, #e6f4e6 0%, #c8e6c9 100%);
+		background: #2e7d32;
+	}
+	.home-three-style .header-section::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(to right, #2e7d32 50%, #e6f4e6 100%);
+		clip-path: ellipse(80% 100% at 30% 50%);
+		z-index: -1;
 	}
 	.home-three-style .main-left-area {
 		padding-top: 0;
@@ -1361,10 +1500,18 @@ ol {
 	}
 	.home-three-style .header-section {
 		position: relative;
-		background: linear-gradient(to bottom, #e6f4e6 0%, #c8e6c9 100%);
+		background: #2e7d32;
 	}
-	.home-three-style .main-left-area {
-		padding-top: 0;
+	.home-three-style .header-section::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(to right, #2e7d32 50%, #e6f4e6 100%);
+		clip-path: ellipse(80% 100% at 30% 50%);
+		z-index: -1;
 	}
 	.home-three-style .main-left-area,
 	.home-three-style .header-section,

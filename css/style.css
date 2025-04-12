@@ -1436,7 +1436,7 @@ ol {
 	}
 }
 .hero-image img {
-    width: 200px; /* 調整寬度 */
+    width: 175px; /* 調整寬度 */
     height: auto; /* 自動調整高度，保持比例 */
     border-radius: 15px; /* 圓潤邊角 */
 }

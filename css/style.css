@@ -365,7 +365,7 @@ ol {
 	width: 100%;
 	height: 100%;
 	background: #e6f4e6; /* 淺綠 */
-	clip-path: ellipse(70% 100% at 70% 50%); /* 曲線分隔 */
+	clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%, 75% 50%); /* 簡單的多邊形分隔 */
 	z-index: -1;
 }
 
@@ -413,7 +413,7 @@ ol {
 	width: 100%;
 	height: 100%;
 	background: #e6f4e6; /* 淺綠 */
-	clip-path: ellipse(70% 100% at 70% 50%); /* 曲線分隔 */
+	clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%, 75% 50%); /* 簡單的多邊形分隔 */
 	z-index: -1;
 }
 
@@ -516,7 +516,7 @@ ol {
 	width: 100%;
 	height: 100%;
 	background: #e6f4e6;
-	clip-path: ellipse(70% 100% at 70% 50%);
+	clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%, 75% 50%);
 	z-index: -1;
 }
 
@@ -793,7 +793,7 @@ ol {
 	width: 100%;
 	height: 100%;
 	background: #e6f4e6;
-	clip-path: ellipse(70% 100% at 70% 50%);
+	clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%, 75% 50%);
 	z-index: -1;
 }
 
@@ -922,7 +922,7 @@ ol {
 	width: 100%;
 	height: 100%;
 	background: #e6f4e6;
-	clip-path: ellipse(70% 100% at 70% 50%);
+	clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%, 75% 50%);
 	z-index: -1;
 }
 
@@ -1061,7 +1061,7 @@ ol {
 	width: 100%;
 	height: 100%;
 	background: #e6f4e6;
-	clip-path: ellipse(70% 100% at 70% 50%);
+	clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%, 75% 50%);
 	z-index: -1;
 }
 
@@ -1159,7 +1159,7 @@ ol {
 	width: 100%;
 	height: 100%;
 	background: #e6f4e6;
-	clip-path: ellipse(70% 100% at 70% 50%);
+	clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%, 75% 50%);
 	z-index: -1;
 }
 
@@ -1289,7 +1289,7 @@ ol {
 	width: 100%;
 	height: 100%;
 	background: #e6f4e6;
-	clip-path: ellipse(70% 100% at 70% 50%);
+	clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%, 75% 50%);
 	z-index: -1;
 }
 
@@ -1405,7 +1405,7 @@ ol {
 		width: 100%;
 		height: 100%;
 		background: #e6f4e6;
-		clip-path: ellipse(70% 100% at 70% 50%);
+		clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%, 75% 50%);
 		z-index: -1;
 	}
 	.home-six-style .header-section {
@@ -1430,7 +1430,7 @@ ol {
 		width: 100%;
 		height: 100%;
 		background: #e6f4e6;
-		clip-path: ellipse(70% 100% at 70% 50%);
+		clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%, 75% 50%);
 		z-index: -1;
 	}
 }
@@ -1458,7 +1458,7 @@ ol {
 		width: 100%;
 		height: 100%;
 		background: #e6f4e6;
-		clip-path: ellipse(70% 100% at 70% 50%);
+		clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%, 75% 50%);
 		z-index: -1;
 	}
 	.container-warp {
@@ -1552,7 +1552,7 @@ ol {
 		width: 100%;
 		height: 100%;
 		background: #e6f4e6;
-		clip-path: ellipse(70% 100% at 70% 50%);
+		clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%, 75% 50%);
 		z-index: -1;
 	}
 	.home-three-style .main-left-area {
@@ -1649,7 +1649,7 @@ ol {
 		width: 100%;
 		height: 100%;
 		background: #e6f4e6;
-		clip-path: ellipse(70% 100% at 70% 50%);
+		clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%, 75% 50%);
 		z-index: -1;
 	}
 	.home-three-style .main-left-area,

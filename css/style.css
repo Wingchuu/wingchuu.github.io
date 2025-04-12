@@ -1435,3 +1435,8 @@ ol {
 		padding-top: 250px;
 	}
 }
+.hero-image img {
+    width: 150px; /* 調整寬度 */
+    height: auto; /* 自動調整高度，保持比例 */
+    border-radius: 15px; /* 圓潤邊角 */
+}
